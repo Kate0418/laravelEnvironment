@@ -1,0 +1,9 @@
+services:
+  laravel:
+    container_name: laravel
+    image: laravel
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - APP_NAME=${APP_NAME}
