@@ -3,7 +3,7 @@
 git clone https://github.com/Kate0418/laravelEnvironment.git
 ```
 ```
-cd laravelEnvironment.git
+cd laravelEnvironment
 ```
 ```
 make laravel app_name
