@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 
 # ローカルリポジトリーの削除
@@ -16,8 +16,8 @@ fi
 
 
 # brewコマンドのパスを通す
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> "/Users/$USER/.zprofile"
+source ~/.zprofile
 
 
 # Homebrewのアップデート
