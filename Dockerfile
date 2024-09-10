@@ -1,5 +1,6 @@
 FROM php:8.3-fpm
 
+ARG APP_NAME
 WORKDIR /workdir
 COPY --from=composer:2.7 /usr/bin/composer /usr/bin/composer
 
@@ -12,4 +13,4 @@ RUN apt-get update && \
     docker-php-ext-install zip pdo pdo_mysql && \
     docker-php-ext-enable pdo_mysql
 
-RUN composer create-project "laravel/laravel=11.x" back
+RUN composer create-project "laravel/laravel=11.x" ${APP_NAME}
